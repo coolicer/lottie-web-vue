@@ -1,5 +1,7 @@
 <template>
-  <div ref="animation"></div>
+  <div>
+    <div ref="animation"></div>
+  </div>
 </template>
 <script>
 import lottie from 'lottie-web'
