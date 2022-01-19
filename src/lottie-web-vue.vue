@@ -31,6 +31,7 @@ export default {
         renderer: this.renderer,
         loop: this.loop,
         autoplay: this.autoPlay,
+        speed: this.speed,
         animationData: this.animationData
       }
 
