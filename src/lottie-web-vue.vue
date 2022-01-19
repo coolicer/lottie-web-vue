@@ -31,12 +31,13 @@ export default {
         renderer: this.renderer,
         loop: this.loop,
         autoplay: this.autoPlay,
-        speed: this.speed,
         animationData: this.animationData
       }
 
       this.anim = lottie.loadAnimation(settings)
-
+      if (this.speed) {
+        this.anim.setSpeed(this.speed)
+      }
       this.anim.addEventListener('loopComplete', () => {
         this.$emit('loopComplete', this.anim)
       })
